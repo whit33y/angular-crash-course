@@ -14,7 +14,9 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
   constructor(private productsService: ProductsService) {}
   products: Product[] = [];
-
+  onProductOutput(product: Product) {
+    console.log(product, 'Output');
+  }
   ngOnInit() {
     this.productsService
       .getProducts('http://localhost:4000/clothes', { page: 0, perPage: 5 })
