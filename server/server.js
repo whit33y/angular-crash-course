@@ -14,6 +14,7 @@ const corsOptions = {
 
 // Use cors middleware
 app.use(cors(corsOptions));
+app.use(express.json());
 
 app.post("/clothes", (req, res) => {
   const { image, name, price, rating } = req.body;
