@@ -10,7 +10,7 @@
     [readonly]="true"
     [cancel]="false"
   ></p-rating>
-  <div class="row">
+  <div class="row gap-05">
     <button
       type="button"
       pButton
@@ -24,6 +24,7 @@
       icon="pi pi-trash"
       (click)="confirmDelete()"
       label="Delete"
+      class="p-button-danger"
       #deleteButton
     ></button>
   </div>

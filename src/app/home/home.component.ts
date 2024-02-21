@@ -105,13 +105,15 @@ export class HomeComponent {
   }
   addProduct(product: Product) {
     this.productsService
-      .addProduct(`http://localhost:4000/clothes/`, product)
+      .addProduct(`http://localhost:4000/clothes`, product)
       .subscribe({
         next: (data) => {
           console.log(data);
           this.fetchProducts(0, this.rows);
         },
-        error: (error) => console.log(error),
+        error: (error) => {
+          console.log(error);
+        },
       });
   }
 
