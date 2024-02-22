@@ -2,28 +2,40 @@
 
 https://youtu.be/f7BJFTEbc10
 
-## Uruchomienie projektu lokalnie
+## Uruchomienie projektu lokalnie [http://localhost:4200](http://localhost:4200)
+Sklonuj projekt
 
-Sklonuj projekt i przejdź do root directory.
+```bash
+git clone https://github.com/whit33y/angular-shop.git
+```
+
+Przejdź do root directory.
 Zainstaluj wykorzystane w projekcie paczki używając
 
 ```bash
 npm install
 ```
 
+a później uruchom aplikacje wpisując
+
+```bash
+ng serve
+```
+
 ## Uruchamianie bazy danych [http://localhost:4000](http://localhost:4000)
 
-Uruchom terminal i przejdź do lokalizacji
+Uruchom drugi terminal i przejdź do lokalizacji
 /tutorial/server a następnie wpisz
+
+```bash
+npm install
+```
+
+a później 
 
 ```bash
 node server.js
 ```
 
-## Uruchomienie aplikacji [http://localhost:4200](http://localhost:4200)
 
-Uruchom drugi terminal i będąc w root directory uruchom aplikacje
 
-```bash
-ng serve
-```
