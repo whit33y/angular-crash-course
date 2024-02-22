@@ -20,7 +20,7 @@ Uruchom terminal i przejdź do lokalizacji
 node server.js
 ```
 
-## Uruchomienie aplikacji
+## Uruchomienie aplikacji [http://localhost:4200](http://localhost:4200)
 
 Uruchom drugi terminal i będąc w root directory uruchom aplikacje
 
