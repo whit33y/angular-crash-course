@@ -12,5 +12,5 @@ import { FooterComponent } from './layout/footer/footer.component';
   imports: [RouterOutlet, HomeComponent, HeaderComponent, FooterComponent],
 })
 export class AppComponent {
-  title = 'tutorial';
+  title = 'Angular-shop';
 }
