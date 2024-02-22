@@ -36,7 +36,12 @@ export class HomeComponent {
     this.displayEditPopup = true;
   }
 
-  toggleDeletePopup(product: Product) {}
+  toggleDeletePopup(product: Product) {
+    if (!product.id) {
+      return;
+    }
+    this.deleteProduct(product.id);
+  }
 
   toggleAddPopup() {
     this.displayAddPopup = true;
